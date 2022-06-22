@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favoriteMusicFragment">
+
+    <fragment
+        android:id="@+id/favoriteMusicFragment"
+        android:name="br.com.zup.minhamusicafavorita.album.view.fragments.FavoriteMusicFragment"
+        android:label="fragment_favorite_music"
+        tools:layout="@layout/fragment_favorite_music" >
+        <action
+            android:id="@+id/action_favoriteMusicFragment_to_viewPagerBandFragment"
+            app:destination="@id/viewPagerBandFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAlbumFragment"
+        android:name="br.com.zup.minhamusicafavorita.album.view.fragments.DetailAlbumFragment"
+        android:label="fragment_detail_album"
+        tools:layout="@layout/fragment_detail_album" />
+    <fragment
+        android:id="@+id/viewPagerBandFragment"
+        android:name="br.com.zup.minhamusicafavorita.album.view.viewpagerband.ViewPagerBandFragment"
+        android:label="fragment_view_pager_album"
+        tools:layout="@layout/fragment_view_pager_album" >
+        <action
+            android:id="@+id/action_viewPagerBandFragment_to_detailAlbumFragment"
+            app:destination="@id/detailAlbumFragment" />
+    </fragment>
+</navigation>

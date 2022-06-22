@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".album.view.fragments.listalbum.ListAlbumsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/card_album"
+        tools:spanCount="2" />
+
+</FrameLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dimen_16"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".album.view.fragments.DetailAlbumFragment">
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_250"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAlbum"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvDescricaoAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescricaoAlbum"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtista"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvGravadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLancamento"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvEstudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGravadora"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvFormato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEstudio"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/tvGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimension_text_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormato"
+        tools:text="TextView" />
+
+    <ImageView
+        android:id="@+id/ivFavorito"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:contentDescription="@string/coracao"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/favorite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
